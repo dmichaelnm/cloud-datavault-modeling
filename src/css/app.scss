@@ -1,1 +1,94 @@
 // app global css in SCSS form
+
+// =======================================================
+// Body
+// =======================================================
+
+body {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+body.body--light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(170deg, rgba(25, 118, 210, 1) 0%, rgba(237, 246, 255, 1) 40%, rgba(255, 255, 255, 1) 80%);
+  color: #1F2328;
+}
+
+body.body--dark {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(170deg, rgba(6, 30, 52, 1) 0%, rgba(3, 12, 21, 1) 40%, rgba(1, 4, 9, 1) 80%);
+  //background-color: #010409;
+  color: #E6EDF3;
+}
+
+// =======================================================
+// Input, Select
+// =======================================================
+
+.q-field {
+  font-size: 0.8rem;
+}
+
+.q-field--auto-height.q-field--dense .q-field__control {
+  min-height: 32px;
+}
+
+.q-field--auto-height.q-field--dense .q-field__control .q-field__native {
+  min-height: 32px;
+}
+
+.q-field--dense .q-field__control {
+  height: 32px;
+}
+
+.q-field--dense .q-field__marginal {
+  height: 32px;
+}
+
+.q-field__native {
+  color: #1F2328;
+}
+
+.q-field--dark .q-field__native {
+  color: #E6EDF3;
+}
+
+.q-field--outlined .q-field__control {
+  border-radius: 6px;
+}
+
+.q-field__label {
+  color: #656d76;
+}
+
+.q-field--dark:not(.q-field--highlighted) .q-field__label {
+  color: #756e77;
+}
+
+.body--light .q-field--outlined .q-field__control {
+  background-color: #F6F8FA;
+
+  &:before {
+    border-color: #D0D7DE;
+  }
+
+  &:focus-within {
+    background-color: transparent;
+  }
+}
+
+.body--dark .q-field--outlined .q-field__control {
+  background-color: #010409;
+
+  &:before {
+    border-color: #30363D;
+  }
+
+  &:focus-within {
+    background-color: transparent;
+  }
+}
+
+
