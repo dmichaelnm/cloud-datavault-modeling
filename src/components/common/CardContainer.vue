@@ -1,4 +1,4 @@
-<template xmlns:template="http://www.w3.org/1999/html">
+<template>
 
   <!-- Card Frame -->
   <div :class="'card ' + classAttr">
